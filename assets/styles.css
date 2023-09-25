@@ -1,0 +1,129 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* 100% of the viewport height */
+    width: 100vw; /* 100% of the viewport width */
+    font-family: 'American Typewriter', serif;
+    background-color: #B3B3B3;
+}
+
+h2 {
+    text-align: center;
+}
+
+#header {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url(IMG_5775.jpg) no-repeat center center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+h1 {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    font-size: 4vw;
+    color: #A8FDF7;
+    z-index: 3;
+}
+
+#header h1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    font-size: 4em;
+    color: #A8FDF7;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* allow the list items to wrap onto multiple lines */
+}
+
+nav ul li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    padding: 10px; /* add some space around the links */
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        flex-basis: 100%; /* make the list items take up the full width of the ul */
+    }
+
+    nav ul li a {
+        font-size: 30px; /* make the links smaller */
+    }
+}
+
+section h2 {
+    font-size: 40px;
+}
+
+section p {
+    font-size: 24px; /* slightly larger font size for better readability */
+    line-height: 1.5; /* adds space between lines of text */
+    padding: 30px; /* more padding to give text more room */
+    border: 5px solid #A8FDF7;
+    width: 90%; /* reduce width to make lines of text shorter */
+    margin: 0 auto; /* center the paragraph */
+}
+
+#headshots .img-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#headshots .img-container a {
+    box-sizing: border-box;
+    width: 50%;
+}
+
+#headshots img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#resume .button-container {
+    text-align: center;
+}
+
+#resume a.download-button {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 20px 30px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#youtube-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
